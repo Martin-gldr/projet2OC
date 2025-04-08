@@ -88,7 +88,7 @@ nav img{
     
 }
 .ancre{
-    padding-top: 13px
+    padding-top: 13px;
 }
 .ancre:hover {
     color: #0065FC;
@@ -130,7 +130,12 @@ header{
     color: #000;
     
 }
-.r-logo{
+
+.r-logo i {
+    color: #000;
+    font-size: large;
+}   
+.r-logo {
     background-color: #F2F2F2;
     border-top-left-radius:15px ;
     border-bottom-left-radius:15px ;
@@ -191,6 +196,9 @@ header{
     flex-direction: row;
     gap: 10px;
 }
+.filtres-choix-flex i{
+    font-size: 20px;
+}
 
 .filtres-choix:hover{
     background-color: #DEEBFF;
@@ -202,6 +210,15 @@ header{
     gap: 8px;
     align-items: center;
     margin-top: 30px;
+}
+#info i {
+    border: 1px #d9d9d9 solid;
+    width: 24px;
+    height: 23px;
+    align-content: center;
+    text-align: center;
+    border-radius: 15px;
+    font-size: small;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -439,6 +456,7 @@ nav ul li{
     width: 100%;
     text-align: center;
     padding-bottom:17px;
+    border-bottom: 2px #FFFFFF solid;
 }
 
 .ancre:hover{
@@ -464,17 +482,19 @@ nav ul li:hover{
 #btn-phone{
     display:inline;
     background-color: #0065FC;
-    color: #FFFFFF;
-    font-size: 18px;
     padding-left: 16px;
     padding-right: 16px;
-    font-weight: 700;
     border-radius: 15px;
     height: 51px;
     width: 51px;
     text-align: center;
     border: 1px #0065FC solid;
     margin-left: -10px;
+}
+#btn-phone i {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
 }
 .filtres-choix-flex{
     display: flex;
