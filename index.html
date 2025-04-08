@@ -15,14 +15,14 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="flex">
         <img src="./images/logo/Booki.png" alt ="logo Bookie"/>
-        <ul>
+        <ul class="flex-row">
             <li>
-                <a class="ancre" href="#hebergementId">Hebergements</a>
+                <a href="#hebergementId">Hebergements</a>
             </li>
             <li>
-                <a class="ancre" href="#activitesId" >Activités</a>
+                <a href="#activitesId" >Activités</a>
             </li>
         </ul>
     </nav>
@@ -32,8 +32,8 @@
             <p>En plein centre-ville ou en pleine nature</p>
             
 
-            <div class="recherche">
-                <div class="r-logo">
+            <div class="recherche flex-row">
+                <div class="logo-localisation flex">
                     <i class="fa-solid fa-location-dot"></i> 
                 </div>
                 
@@ -48,27 +48,27 @@
                 </button>
             </div>
 
-            <div class="filtres">
+            <div class="filtres flex-row">
                     
                     <h2>Filtres</h2>
                     
 
-                    <div class="filtres-choix-flex">
+                    <div class="filtres-choix flex-row">
 
-                        <div class="filtres-choix">
+                        <div>
                             <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>
                         <strong>Economique</strong>
                         </div>
 
-                        <div class="filtres-choix">
+                        <div>
                             <i class="fa-solid fa-person" aria-hidden="true"></i>
                             <strong>Familiale</strong>
                         </div>
-                        <div class="filtres-choix">
+                        <div>
                             <i class="fa-solid fa-heart" aria-hidden="true"></i>
                             <strong>Romantique</strong>
                         </div>
-                        <div class="filtres-choix">
+                        <div>
                             <i class="fa-solid fa-fire" aria-hidden="true"></i>
                             <strong>Nos pépites</strong>
                         </div>
@@ -76,11 +76,12 @@
             
             </div>
 
-            <div id="info">
+            <div class="info flex-row">
                 <i class="fa-solid fa-info" aria-hidden="true"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </header>
+        
         <main>
             <div class="hebergements-and-populaires">
                 <section class="hebergements" id="hebergementId">

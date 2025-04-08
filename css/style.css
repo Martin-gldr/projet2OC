@@ -67,16 +67,27 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+
+/****** Class utiles *******/
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex{
+    display: flex;
+}
+
 /****** Navigation ********/
 nav{
-    display: flex;
     justify-content: space-between;
     margin-right: 48px;
 }
-nav ul {
-    display: flex;
+nav ul { 
     list-style: none;
-    flex-direction: row;
     gap: 68px
 }
 
@@ -87,10 +98,11 @@ nav img{
     margin-left: 18px;
     
 }
-.ancre{
+
+nav ul li a {
     padding-top: 13px;
 }
-.ancre:hover {
+nav ul li a:hover {
     color: #0065FC;
     border-top: 2px #0065FC solid
     
@@ -105,12 +117,10 @@ header{
 }
 /***** recherche *****/
 .recherche{
-    display: flex;
-    flex-direction: row;
     align-items: center;
     margin-top: 35px;
 }
-#input-recherche{
+.recherche input{
     font-size: 18px;
     padding-top: 14px;
     padding-bottom: 14px;
@@ -131,23 +141,22 @@ header{
     
 }
 
-.r-logo i {
+.logo-localisation i {
     color: #000;
     font-size: large;
 }   
-.r-logo {
+.logo-localisation {
     background-color: #F2F2F2;
     border-top-left-radius:15px ;
     border-bottom-left-radius:15px ;
     height: 49px;
     width: 50px;
-  display: flex;
   align-items: center;
   justify-content: center;
   border: 1px #F2F2F2 solid;
 }
 
-#btn-phone{
+#btn-phone {
     display: none;
 }
 .recherche button{
@@ -168,8 +177,6 @@ header{
 
 
 .filtres{
-    display: flex;
-    flex-direction: row;
     list-style: none;
     gap: 10px;
     margin-top: 35px;
@@ -177,9 +184,10 @@ header{
 }
 .filtres h2{
     font-size: 16px;
+    margin: 0%;
 }
 
-.filtres-choix{
+.filtres-choix div{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -191,27 +199,24 @@ header{
     height: 50px;
     
 }
-.filtres-choix-flex{
-    display: flex;
-    flex-direction: row;
+.filtres-choix{
+    flex-wrap: wrap;
     gap: 10px;
 }
-.filtres-choix-flex i{
+.filtres-choix i{
     font-size: 20px;
 }
 
-.filtres-choix:hover{
+.filtres-choix div:hover{
     background-color: #DEEBFF;
 }
 
-#info{
-    display: flex;
-    flex-direction: row;
+.info{
     gap: 8px;
     align-items: center;
     margin-top: 30px;
 }
-#info i {
+.info i {
     border: 1px #d9d9d9 solid;
     width: 24px;
     height: 23px;
@@ -439,14 +444,12 @@ nav img{
     margin-left: 0px;
 }
 nav{
-    display: flex;
     flex-direction: column;
     margin:0px;
     align-items: center;
     gap: 10px;
 }
 nav ul{
-    display: flex;
     gap:0px;
     width: 100%;
     padding-left:  0px;
@@ -459,15 +462,14 @@ nav ul li{
     border-bottom: 2px #FFFFFF solid;
 }
 
-.ancre:hover{
-    border-top :none ;
+nav ul li a:hover{
+    border-top :none;
 
 }
 nav ul li:hover{
     border-bottom: 2px #0065FC solid;   
 }
 .recherche{
-    display: flex;
     justify-content: center;
 }
 .recherche button{
@@ -479,7 +481,7 @@ nav ul li:hover{
 #input-recherche{
     max-width: 255px;
 }
-#btn-phone{
+#btn-phone {
     display:inline;
     background-color: #0065FC;
     padding-left: 16px;
@@ -496,12 +498,7 @@ nav ul li:hover{
     font-size: 18px;
     font-weight: 700;
 }
-.filtres-choix-flex{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-   
-}
+
 .filtres-choix{
     min-width: 124.5px;
 }
@@ -516,6 +513,7 @@ nav ul li:hover{
 }
 .populaires{
     background-color: #F2F2F2;
+    margin-top: 0%;
 }
 .populaires-cards{
     display: flex;
