@@ -510,7 +510,6 @@ footer a:hover{
 @media(max-width:830px){ 
 .hebergements-cards{
     gap: 25px;
-    justify-content: none;
 }
 .hebergements-cards .card-title{
     font-size: 14px;
@@ -616,7 +615,7 @@ footer div a{
     .recherche{
         justify-content: center;
         max-width: none;
-        margin: right 0;
+        margin-right: 0px;
        
     }
     .recherche button{
@@ -790,7 +789,7 @@ footer div a{
   
     .recherche form{
         width: 70%;
-        min-width: none;
+
     }
 
     .recherche .logo-localisation{
