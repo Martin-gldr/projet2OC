@@ -26,61 +26,62 @@
             </li>
         </ul>
     </nav>
-    <div class="main-container">
-        <header>
-            <h1>Trouvez votre hebergement pour des vacances de rêve</h1>
-            <p>En plein centre-ville ou en pleine nature</p>
+    <header>
+        <h1>Trouvez votre hebergement pour des vacances de rêve</h1>
+        <p>En plein centre-ville ou en pleine nature</p>
+        
+
+        <div class="recherche flex-row">
+            <div class="logo-localisation flex">
+                <i class="fa-solid fa-location-dot"></i> 
+            </div>
             
 
-            <div class="recherche flex-row">
-                <div class="logo-localisation flex">
-                    <i class="fa-solid fa-location-dot"></i> 
-                </div>
+            <form method="get" action="#">
+                <input type="text" name="lieu" id="input-recherche" placeholder="Marseille, France"> 
+            </form>
+
+            <button>Rechercher </button>
+            <button id="btn-phone">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <div class="filtres flex-row">
+                
+                <h2>Filtres</h2>
                 
 
-                <form method="get" action="#">
-                    <input type="text" name="lieu" id="input-recherche" placeholder="Marseille, France"> 
-                </form>
+                <div class="filtres-choix flex-row">
 
-                <button>Rechercher </button>
-                <button id="btn-phone">
-                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-                </button>
-            </div>
-
-            <div class="filtres flex-row">
-                    
-                    <h2>Filtres</h2>
-                    
-
-                    <div class="filtres-choix flex-row">
-
-                        <div>
-                            <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>
-                        <strong>Economique</strong>
-                        </div>
-
-                        <div>
-                            <i class="fa-solid fa-person" aria-hidden="true"></i>
-                            <strong>Familiale</strong>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-heart" aria-hidden="true"></i>
-                            <strong>Romantique</strong>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-fire" aria-hidden="true"></i>
-                            <strong>Nos pépites</strong>
-                        </div>
+                    <div>
+                        <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>
+                    <strong>Economique</strong>
                     </div>
-            
-            </div>
 
-            <div class="info flex-row">
-                <i class="fa-solid fa-info" aria-hidden="true"></i>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
-            </div>
-        </header>
+                    <div>
+                        <i class="fa-solid fa-person" aria-hidden="true"></i>
+                        <strong>Familiale</strong>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                        <strong>Romantique</strong>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-fire" aria-hidden="true"></i>
+                        <strong>Nos pépites</strong>
+                    </div>
+                </div>
+        
+        </div>
+
+        <div class="info flex-row">
+            <i class="fa-solid fa-info" aria-hidden="true"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+    </header>
+    <div class="main-container">
+        
 
         <main class="flex-column">
             <div class="hebergements-and-populaires">
@@ -215,7 +216,7 @@
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
-                    <div class="populaires-cards">
+                    <div class="populaires-cards flex-column">
                         <a href="#">
                             <article class="card flex">
                                 <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -302,29 +303,31 @@
 
             </div>
         </main>
-        <footer>
-            <div class="footer flex-row">
-                <div >
-                    <h2>A propos</h2>
-                    <a href="#">Fonctionnement du site</a>
-                    <a href="#">Condition générales</a>
-                    <a href="#">Données et confidentialité</a>    
-                </div>
-
-                <div>
-                    <h2>Nos hebergements</h2>
-                    <a href="#">Charte qualité</a>
-                    <a href="#">Proposer votre hôtel</a>   
-                </div>
-
-                <div>
-                    <h2>Assistance</h2>
-                    <a href="#">Centre d'aide</a>
-                    <a href="#">Nous contacter</a>   
-                </div>
+        
+       
+    </div> 
+    <footer>
+        <div class="footer flex-row">
+            <div >
+                <h2>A propos</h2>
+                <a href="#">Fonctionnement du site</a>
+                <a href="#">Condition générales</a>
+                <a href="#">Données et confidentialité</a>    
             </div>
-        </footer>
-    </div>
+
+            <div>
+                <h2>Nos hebergements</h2>
+                <a href="#">Charte qualité</a>
+                <a href="#">Proposer votre hôtel</a>   
+            </div>
+
+            <div>
+                <h2>Assistance</h2>
+                <a href="#">Centre d'aide</a>
+                <a href="#">Nous contacter</a>   
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
